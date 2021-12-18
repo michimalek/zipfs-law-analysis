@@ -60,7 +60,7 @@ def research_question(countries_data: dict):
 
     # Sort cities by population, add rank column
     sorted_df = convert_to_rank_table(df)
-    plot_zipf(sorted_df)
+    plot_zipf(sorted_df,country)
 
     # Calculate frequency probability of all cities
     freq_prob_df = calc_freq_prob(sorted_df)

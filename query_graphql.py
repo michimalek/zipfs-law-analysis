@@ -126,9 +126,6 @@ def query_country(country: str, location: str):
     # fetch digested data
     data = query_data(sparql_query)
 
-    # calculate distances
-    # data = compute_distances(data)
-
     # save to csv
     output_to_csv(data, location)
     # print(data)

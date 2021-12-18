@@ -21,13 +21,14 @@ def convert_to_rank_table(df):
     # print(pd.DataFrame(sorted_df))
     return final_df
 
-def plot_zipf(sorted_df):
+def plot_zipf(sorted_df,country_name):
     fig = px.line(sorted_df, x = 'rank', y = 'total_pop', 
-    title='Cities in Poland based on their Rank', log_x=True,log_y=True)
-    fig.update_traces(name='Poland\'s Cities', showlegend = True)
+        title='Cities in {} based on their Rank'.format(country_name), log_x=True,log_y=True,)
+    fig.update_traces(name='{}\'s Cities'.format(country_name), showlegend = True)
     fig.add_scatter(x = sorted_df['rank'], y = sorted_df['zipf_tot_pop'])
     fig.update_xaxes(title_text='Rank of City')
     fig.update_yaxes(title_text='Population of City')
+    
     fig.show()
     print("Graph comparison should be opened in your browser")
 
