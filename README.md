@@ -10,11 +10,11 @@ If you wanna learn more about Zipf's Law feel free to read trough [here](https:/
 To compare the Zipf's distribution to the population frequency distribution of the cities of each country, we used two probability distribution comparison tools namely [Hellinger Distance](https://en.wikipedia.org/wiki/Hellinger_distance) and [Kullback-Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence). Those indicate how similar two distributions are from each other.
 When the script is run it prints out some indication of what is going on and at the end prints the results of Hellinger Distance and KL Divergence.
 
-Short summary of how to understand the values:
-- Hellinger Distance: calculated as a scale between 0 and 1,
-where 0 being that the two distribution are identical to each other and 1 that
+Short summary of how to understand the resulting values:
+- **Hellinger Distance** describes the degree of similarity between two different probability distribu-
+tions. It is calculated as a scale between 0 and 1, where 0 being that the two distribution are identical to each other and 1 that
 they are the furthest apart from each other.
-- Kullback-Leibler Divergence: ocuses on information loss
+- **Kullback-Leibler Divergence** focuses on information loss
 between two distributions. This is indicated by first mapping the real data to
 the zipf data and afterwards mapping the zipf data to the real data and compar-
 ing both results with each other. If the results are close to each other, there is
