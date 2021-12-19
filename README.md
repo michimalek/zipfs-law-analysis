@@ -11,8 +11,7 @@ To compare the Zipf's distribution to the population frequency distribution of t
 When the script is run it prints out some indication of what is going on and at the end prints the results of Hellinger Distance and KL Divergence.
 
 Short summary of how to understand the resulting values:
-- **Hellinger Distance** describes the degree of similarity between two different probability distribu-
-tions. It is calculated as a scale between 0 and 1, where 0 being that the two distribution are identical to each other and 1 that
+- **Hellinger Distance** describes the degree of similarity between two different probability distributions. It is calculated as a scale between 0 and 1, where 0 being that the two distribution are identical to each other and 1 that
 they are the furthest apart from each other.
 - **Kullback-Leibler Divergence** focuses on information loss
 between two distributions. This is indicated by first mapping the real data to
